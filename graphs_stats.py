@@ -3,7 +3,7 @@ import os
 import numpy as np
 import pandas as pd
 
-from metrics import filter_to_noncanon, read_ct, read_gt, to_bin
+from _metrics import filter_to_noncanon, read_ct, read_gt, to_bin
 
 GT_PATH = "/home/mjustyna/data/graphafold_data/casp/"
 
