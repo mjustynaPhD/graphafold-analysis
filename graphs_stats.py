@@ -15,6 +15,7 @@ def main():
     can_gt_files = sorted([f for f in gt_files if f.endswith('.cmt')])
 
     gts = {}
+    print("PDB ID, Unpaired, paired, nodes")
     for all_g, can_g in zip(all_gt_files, can_gt_files):
         # print(all_g, can_g)
         all_g_path = os.path.join(GT_PATH, all_g)
@@ -25,12 +26,11 @@ def main():
         assert len(all_g_vec) >= len(can_g_vec)
         assert leng_all == leng_can, f'{all_g} {can_g} {leng_all} {leng_can}'
         # get difference between all_g_vec and can_g_vec
-        diff = np.setdiff1d(all_g_vec, can_g_vec)
-        print(f"{all_g.replace('.amt', '')} {len(can_g_vec)//2} {(len(all_g_vec)-len(can_g_vec))//2}")
-        nc = np.zeros(leng_all)
-        nc[diff] = 1
-        gts[all_g.split('.')[0]] = nc
-    
-
+        # print(f"{all_g.replace('.amt', '')} {len(can_g_vec)//2} {(len(all_g_vec)-len(can_g_vec))//2}")
+        
+        all_paired = np.zeros(leng_all)
+        all_paired[all_g_vec] = 1
+        all_paired[can_g_vec] = 1
+        print(f"{all_g.split('.')[0]} {int(leng_all - np.sum(all_paired))} {int(np.sum(all_paired))} {leng_all}")
 if __name__ == "__main__":
     main()

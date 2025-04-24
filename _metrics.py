@@ -77,7 +77,7 @@ def read_gt(file):
 
     lines = [[int(i) for i in l1.strip().split(',')] for l1 in lines]
     arr = np.array(lines)
-    
+
     return np.where(arr > 0)[0], len(arr[0])
 
 def get_vector_diff(v1, v2):
