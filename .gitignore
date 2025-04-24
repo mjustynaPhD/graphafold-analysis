@@ -15,3 +15,4 @@ descs/
 *.tar
 *.tar.gz
 launch.json
+large/
