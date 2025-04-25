@@ -31,3 +31,12 @@
 265,266,NotPredictedNonCanonical,1.0
 295,298,PredictedGoodNonCanonical,1.0
 339,342,PredictedGoodNonCanonical,1.0
+10,365,PredictedBadNonCanonical,1.0
+13,362,PredictedBadNonCanonical,1.0
+15,360,PredictedBadNonCanonical,1.0
+23,42,PredictedBadNonCanonical,1.0
+94,327,PredictedBadNonCanonical,1.0
+99,322,PredictedBadNonCanonical,1.0
+108,313,PredictedBadNonCanonical,1.0
+224,282,PredictedBadNonCanonical,1.0
+285,308,PredictedBadNonCanonical,1.0

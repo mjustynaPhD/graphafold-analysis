@@ -14,8 +14,8 @@
 176,202,NotPredictedNonCanonical,1.0
 177,200,NotPredictedNonCanonical,1.0
 184,187,NotPredictedNonCanonical,1.0
-191,193,PredictedBadNonCanonical,1.0
-191,194,PredictedBadNonCanonical,1.0
+191,193,NotPredictedNonCanonical,1.0
+191,194,NotPredictedNonCanonical,1.0
 195,200,NotPredictedNonCanonical,1.0
 196,203,NotPredictedNonCanonical,1.0
 198,202,NotPredictedNonCanonical,1.0
@@ -31,3 +31,12 @@
 265,266,NotPredictedNonCanonical,1.0
 295,298,NotPredictedNonCanonical,1.0
 339,342,NotPredictedNonCanonical,1.0
+13,362,PredictedBadNonCanonical,1.0
+15,360,PredictedBadNonCanonical,1.0
+94,327,PredictedBadNonCanonical,1.0
+99,322,PredictedBadNonCanonical,1.0
+101,320,PredictedBadNonCanonical,1.0
+102,319,PredictedBadNonCanonical,1.0
+104,317,PredictedBadNonCanonical,1.0
+108,313,PredictedBadNonCanonical,1.0
+191,259,PredictedBadNonCanonical,1.0

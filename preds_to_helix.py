@@ -40,7 +40,7 @@ def matrix_to_pairs(matrix):
     pairs = []
     for i, row in enumerate(matrix):
         for j, col in enumerate(row):
-            if col > 0:
+            if col > 0 and j > i:
                 pairs.append([i, j])
     return np.array(pairs)
 
@@ -49,6 +49,7 @@ def to_helix(gt_pairs, pred_pairs):
     helix = []
     list_of_pred_x = pred_pairs[:, 0]
     pairs_added = []
+    added_preds_indeces = []
     for x, y in gt_pairs:
         p = f'{y},{x}'
         if p in pairs_added:
@@ -66,10 +67,20 @@ def to_helix(gt_pairs, pred_pairs):
             pred_pair = pred_pairs[index]
             if all(np.array([x, y]) == pred_pair):
                 helix.append([x, y, 1, 1.0])
+                added_preds_indeces.append(index)
             else:
-                helix.append([x, y, 2, 1.0])
+                helix.append([x, y, 3, 1.0])
         else:
             helix.append([x, y, 3, 1.0])
+    for i, p in enumerate(pred_pairs):
+        if i in added_preds_indeces:
+            continue
+        x, y = p
+        if f'{x},{y}' in pairs_added or f'{y},{x}' in pairs_added:
+            continue
+        pairs_added.append(f'{x},{y}')
+        helix.append([x, y, 2, 1.0])
+
     helix = np.array(helix)
     out_df = pd.DataFrame(helix, columns=['x', 'y', 'type', 'leng'])
     out_df['type'] = out_df['type'].map(type_categories)

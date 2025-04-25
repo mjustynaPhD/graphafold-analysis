@@ -4,3 +4,11 @@
 133,136,NotPredictedNonCanonical,1.0
 173,176,NotPredictedNonCanonical,1.0
 215,218,NotPredictedNonCanonical,1.0
+20,118,PredictedBadNonCanonical,1.0
+86,101,PredictedBadNonCanonical,1.0
+88,99,PredictedBadNonCanonical,1.0
+130,139,PredictedBadNonCanonical,1.0
+166,183,PredictedBadNonCanonical,1.0
+167,182,PredictedBadNonCanonical,1.0
+168,181,PredictedBadNonCanonical,1.0
+207,226,PredictedBadNonCanonical,1.0

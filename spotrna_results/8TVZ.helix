@@ -4,7 +4,7 @@
 45,49,NotPredictedNonCanonical,1.0
 46,48,NotPredictedNonCanonical,1.0
 48,49,NotPredictedNonCanonical,1.0
-89,285,PredictedBadNonCanonical,1.0
+89,285,NotPredictedNonCanonical,1.0
 91,283,NotPredictedNonCanonical,1.0
 92,282,NotPredictedNonCanonical,1.0
 93,97,NotPredictedNonCanonical,1.0
@@ -15,7 +15,7 @@
 98,277,NotPredictedNonCanonical,1.0
 98,279,NotPredictedNonCanonical,1.0
 106,263,PredictedGoodNonCanonical,1.0
-106,264,PredictedBadNonCanonical,1.0
+106,264,NotPredictedNonCanonical,1.0
 123,143,PredictedGoodNonCanonical,1.0
 158,161,PredictedGoodNonCanonical,1.0
 178,181,PredictedGoodNonCanonical,1.0
@@ -25,3 +25,5 @@
 275,279,NotPredictedNonCanonical,1.0
 313,321,NotPredictedNonCanonical,1.0
 342,345,PredictedGoodNonCanonical,1.0
+73,89,PredictedBadNonCanonical,1.0
+307,327,PredictedBadNonCanonical,1.0

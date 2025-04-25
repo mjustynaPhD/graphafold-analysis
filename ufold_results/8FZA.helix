@@ -1,4 +1,4 @@
-2,20,PredictedBadNonCanonical,1.0
+2,20,NotPredictedNonCanonical,1.0
 3,12,NotPredictedNonCanonical,1.0
 5,25,NotPredictedNonCanonical,1.0
 6,26,NotPredictedNonCanonical,1.0
@@ -20,3 +20,4 @@
 43,57,NotPredictedNonCanonical,1.0
 45,54,NotPredictedNonCanonical,1.0
 46,52,NotPredictedNonCanonical,1.0
+20,30,PredictedBadNonCanonical,1.0

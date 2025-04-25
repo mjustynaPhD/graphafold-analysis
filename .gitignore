@@ -16,3 +16,4 @@ descs/
 *.tar.gz
 launch.json
 large/
+large_sequences/

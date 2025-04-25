@@ -8,3 +8,6 @@
 103,104,NotPredictedNonCanonical,1.0
 103,109,NotPredictedNonCanonical,1.0
 104,109,NotPredictedNonCanonical,1.0
+35,51,PredictedBadNonCanonical,1.0
+73,91,PredictedBadNonCanonical,1.0
+78,87,PredictedBadNonCanonical,1.0
