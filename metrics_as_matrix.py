@@ -3,12 +3,14 @@ import numpy as np
 import pandas as pd
 from sklearn.metrics import precision_score, recall_score, f1_score
 
-GT_PATH = "/home/mjustyna/data/graphafold_data/casp/"
-preds_methods = ['sincfold', 'ufold', 'spotrna']
+# GT_PATH = "/home/mjustyna/data/graphafold_data/casp/"
+GT_PATH = "/home/mjustyna/graphafold/large/"
+# preds_methods = ['sincfold', 'ufold', 'spotrna']
+preds_methods = ['spotrna_long']
 
 # Funkcja do obliczania metryk
 def calculate_metrics(predicted, labels):
-    
+    """Calculate metrics: accuracy, precision, recall, f1, inf_metric, tp, fp, fn."""
     if len(np.unique(labels)) == 1:
         precision = recall = f1 = accuracy = 1.0 if np.all(labels == predicted) else 0.0
     else:

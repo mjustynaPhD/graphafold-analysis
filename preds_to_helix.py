@@ -5,8 +5,10 @@ import pandas as pd
 
 from metrics_as_matrix import filter_to_noncanon, read_ct, get_gt
 
-preds_methods = ['sincfold', 'ufold', 'spotrna']
-GT_PATH = "/home/mjustyna/data/graphafold_data/casp/"
+# preds_methods = ['sincfold', 'ufold', 'spotrna']
+preds_methods = ['spotrna_long']
+# GT_PATH = "/home/mjustyna/data/graphafold_data/casp/"
+GT_PATH = "/home/mjustyna/graphafold/large"
 
 type_categories = {
     1: 'PredictedGoodNonCanonical',

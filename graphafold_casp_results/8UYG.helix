@@ -1,0 +1,13 @@
+33,53,PredictedGoodNonCanonical,1.0
+24,65,PredictedGoodNonCanonical,1.0
+102,103,PredictedGoodNonCanonical,1.0
+15,122,PredictedGoodNonCanonical,1.0
+44,47,PredictedGoodNonCanonical,1.0
+80,83,PredictedGoodNonCanonical,1.0
+8,127,PredictedGoodNonCanonical,1.0
+32,80,PredictedBadNonCanonical,1.0
+31,75,PredictedBadNonCanonical,1.0
+82,105,PredictedBadNonCanonical,1.0
+80,110,PredictedBadNonCanonical,1.0
+40,44,NotPredictedNonCanonical,1.0
+16,17,NotPredictedNonCanonical,1.0
